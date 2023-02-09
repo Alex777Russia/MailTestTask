@@ -12,6 +12,12 @@
 		F5406C482995097A00AD4DC9 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5406C472995097A00AD4DC9 /* VerificationViewController.swift */; };
 		F5406C4D2995097B00AD4DC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5406C4C2995097B00AD4DC9 /* Assets.xcassets */; };
 		F5406C502995097B00AD4DC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5406C4E2995097B00AD4DC9 /* LaunchScreen.storyboard */; };
+		F5406C5D29950FD400AD4DC9 /* StatusLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5406C5C29950FD400AD4DC9 /* StatusLabel.swift */; };
+		F5406C61299513D600AD4DC9 /* UIStackViewWithExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5406C60299513D600AD4DC9 /* UIStackViewWithExtensions.swift */; };
+		F5406C63299514AD00AD4DC9 /* MainTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5406C62299514AD00AD4DC9 /* MainTextField.swift */; };
+		F5406C652995167200AD4DC9 /* VerificationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5406C642995167200AD4DC9 /* VerificationButton.swift */; };
+		F5406C67299517A200AD4DC9 /* MailCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5406C66299517A200AD4DC9 /* MailCollectionView.swift */; };
+		F5406C6A299518C100AD4DC9 /* MailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5406C69299518C100AD4DC9 /* MailCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		F5406C4C2995097B00AD4DC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5406C4F2995097B00AD4DC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5406C512995097B00AD4DC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5406C5C29950FD400AD4DC9 /* StatusLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusLabel.swift; sourceTree = "<group>"; };
+		F5406C60299513D600AD4DC9 /* UIStackViewWithExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewWithExtensions.swift; sourceTree = "<group>"; };
+		F5406C62299514AD00AD4DC9 /* MainTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTextField.swift; sourceTree = "<group>"; };
+		F5406C642995167200AD4DC9 /* VerificationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationButton.swift; sourceTree = "<group>"; };
+		F5406C66299517A200AD4DC9 /* MailCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailCollectionView.swift; sourceTree = "<group>"; };
+		F5406C69299518C100AD4DC9 /* MailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +66,11 @@
 		F5406C422995097A00AD4DC9 /* TestMail */ = {
 			isa = PBXGroup;
 			children = (
+				F5406C5B29950FB400AD4DC9 /* Views */,
 				F5406C5929950BA400AD4DC9 /* Application */,
 				F5406C5829950B9800AD4DC9 /* Models */,
 				F5406C5729950B8B00AD4DC9 /* Controllers */,
+				F5406C5E299513A700AD4DC9 /* Extensions */,
 				F5406C5A29950BAF00AD4DC9 /* Resources */,
 			);
 			path = TestMail;
@@ -94,6 +108,50 @@
 				F5406C512995097B00AD4DC9 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		F5406C5B29950FB400AD4DC9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F5406C6B29951A0600AD4DC9 /* VerificationVC */,
+				F5406C68299518B100AD4DC9 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F5406C5E299513A700AD4DC9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F5406C5F299513B600AD4DC9 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F5406C5F299513B600AD4DC9 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				F5406C60299513D600AD4DC9 /* UIStackViewWithExtensions.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		F5406C68299518B100AD4DC9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F5406C69299518C100AD4DC9 /* MailCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F5406C6B29951A0600AD4DC9 /* VerificationVC */ = {
+			isa = PBXGroup;
+			children = (
+				F5406C5C29950FD400AD4DC9 /* StatusLabel.swift */,
+				F5406C62299514AD00AD4DC9 /* MainTextField.swift */,
+				F5406C642995167200AD4DC9 /* VerificationButton.swift */,
+				F5406C66299517A200AD4DC9 /* MailCollectionView.swift */,
+			);
+			path = VerificationVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,7 +224,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5406C63299514AD00AD4DC9 /* MainTextField.swift in Sources */,
+				F5406C6A299518C100AD4DC9 /* MailCollectionViewCell.swift in Sources */,
+				F5406C652995167200AD4DC9 /* VerificationButton.swift in Sources */,
+				F5406C5D29950FD400AD4DC9 /* StatusLabel.swift in Sources */,
+				F5406C61299513D600AD4DC9 /* UIStackViewWithExtensions.swift in Sources */,
 				F5406C482995097A00AD4DC9 /* VerificationViewController.swift in Sources */,
+				F5406C67299517A200AD4DC9 /* MailCollectionView.swift in Sources */,
 				F5406C442995097A00AD4DC9 /* AppDelegate.swift in Sources */,
 				F5406C462995097A00AD4DC9 /* SceneDelegate.swift in Sources */,
 			);
