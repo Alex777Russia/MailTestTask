@@ -20,6 +20,11 @@
 		F5406C6A299518C100AD4DC9 /* MailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5406C69299518C100AD4DC9 /* MailCollectionViewCell.swift */; };
 		F5406C6D2995237B00AD4DC9 /* VerificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5406C6C2995237B00AD4DC9 /* VerificationModel.swift */; };
 		F5406C6F299527C500AD4DC9 /* StringWithExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5406C6E299527C500AD4DC9 /* StringWithExtensions.swift */; };
+		F5406C72299531D500AD4DC9 /* MailApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5406C71299531D500AD4DC9 /* MailApiKey.swift */; };
+		F5406C742995320600AD4DC9 /* NetworkPequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5406C732995320600AD4DC9 /* NetworkPequest.swift */; };
+		F5406C76299534C500AD4DC9 /* MailResponceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5406C75299534C500AD4DC9 /* MailResponceModel.swift */; };
+		F5406C78299536C300AD4DC9 /* NetworkDataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5406C77299536C300AD4DC9 /* NetworkDataFetch.swift */; };
+		F5406C7B29953A2C00AD4DC9 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5406C7A29953A2C00AD4DC9 /* Alerts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +43,11 @@
 		F5406C69299518C100AD4DC9 /* MailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailCollectionViewCell.swift; sourceTree = "<group>"; };
 		F5406C6C2995237B00AD4DC9 /* VerificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationModel.swift; sourceTree = "<group>"; };
 		F5406C6E299527C500AD4DC9 /* StringWithExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringWithExtensions.swift; sourceTree = "<group>"; };
+		F5406C71299531D500AD4DC9 /* MailApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailApiKey.swift; sourceTree = "<group>"; };
+		F5406C732995320600AD4DC9 /* NetworkPequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPequest.swift; sourceTree = "<group>"; };
+		F5406C75299534C500AD4DC9 /* MailResponceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailResponceModel.swift; sourceTree = "<group>"; };
+		F5406C77299536C300AD4DC9 /* NetworkDataFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetch.swift; sourceTree = "<group>"; };
+		F5406C7A29953A2C00AD4DC9 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +83,7 @@
 				F5406C5B29950FB400AD4DC9 /* Views */,
 				F5406C5929950BA400AD4DC9 /* Application */,
 				F5406C5829950B9800AD4DC9 /* Models */,
+				F5406C702995313300AD4DC9 /* Network */,
 				F5406C5729950B8B00AD4DC9 /* Controllers */,
 				F5406C5E299513A700AD4DC9 /* Extensions */,
 				F5406C5A29950BAF00AD4DC9 /* Resources */,
@@ -92,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				F5406C6C2995237B00AD4DC9 /* VerificationModel.swift */,
+				F5406C75299534C500AD4DC9 /* MailResponceModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -120,6 +132,7 @@
 			children = (
 				F5406C6B29951A0600AD4DC9 /* VerificationVC */,
 				F5406C68299518B100AD4DC9 /* Cells */,
+				F5406C7A29953A2C00AD4DC9 /* Alerts.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -158,6 +171,16 @@
 				F5406C66299517A200AD4DC9 /* MailCollectionView.swift */,
 			);
 			path = VerificationVC;
+			sourceTree = "<group>";
+		};
+		F5406C702995313300AD4DC9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F5406C71299531D500AD4DC9 /* MailApiKey.swift */,
+				F5406C732995320600AD4DC9 /* NetworkPequest.swift */,
+				F5406C77299536C300AD4DC9 /* NetworkDataFetch.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +255,14 @@
 			files = (
 				F5406C6D2995237B00AD4DC9 /* VerificationModel.swift in Sources */,
 				F5406C63299514AD00AD4DC9 /* MainTextField.swift in Sources */,
+				F5406C7B29953A2C00AD4DC9 /* Alerts.swift in Sources */,
 				F5406C6A299518C100AD4DC9 /* MailCollectionViewCell.swift in Sources */,
 				F5406C652995167200AD4DC9 /* VerificationButton.swift in Sources */,
+				F5406C78299536C300AD4DC9 /* NetworkDataFetch.swift in Sources */,
 				F5406C5D29950FD400AD4DC9 /* StatusLabel.swift in Sources */,
+				F5406C742995320600AD4DC9 /* NetworkPequest.swift in Sources */,
+				F5406C72299531D500AD4DC9 /* MailApiKey.swift in Sources */,
+				F5406C76299534C500AD4DC9 /* MailResponceModel.swift in Sources */,
 				F5406C61299513D600AD4DC9 /* UIStackViewWithExtensions.swift in Sources */,
 				F5406C482995097A00AD4DC9 /* VerificationViewController.swift in Sources */,
 				F5406C67299517A200AD4DC9 /* MailCollectionView.swift in Sources */,
