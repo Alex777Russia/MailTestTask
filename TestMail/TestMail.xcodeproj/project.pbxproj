@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F5406C442995097A00AD4DC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5406C432995097A00AD4DC9 /* AppDelegate.swift */; };
 		F5406C462995097A00AD4DC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5406C452995097A00AD4DC9 /* SceneDelegate.swift */; };
-		F5406C482995097A00AD4DC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5406C472995097A00AD4DC9 /* ViewController.swift */; };
+		F5406C482995097A00AD4DC9 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5406C472995097A00AD4DC9 /* VerificationViewController.swift */; };
 		F5406C4D2995097B00AD4DC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5406C4C2995097B00AD4DC9 /* Assets.xcassets */; };
 		F5406C502995097B00AD4DC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5406C4E2995097B00AD4DC9 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,7 +18,7 @@
 		F5406C402995097A00AD4DC9 /* TestMail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5406C432995097A00AD4DC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5406C452995097A00AD4DC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F5406C472995097A00AD4DC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5406C472995097A00AD4DC9 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
 		F5406C4C2995097B00AD4DC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5406C4F2995097B00AD4DC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5406C512995097B00AD4DC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,14 +54,46 @@
 		F5406C422995097A00AD4DC9 /* TestMail */ = {
 			isa = PBXGroup;
 			children = (
+				F5406C5929950BA400AD4DC9 /* Application */,
+				F5406C5829950B9800AD4DC9 /* Models */,
+				F5406C5729950B8B00AD4DC9 /* Controllers */,
+				F5406C5A29950BAF00AD4DC9 /* Resources */,
+			);
+			path = TestMail;
+			sourceTree = "<group>";
+		};
+		F5406C5729950B8B00AD4DC9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F5406C472995097A00AD4DC9 /* VerificationViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F5406C5829950B9800AD4DC9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F5406C5929950BA400AD4DC9 /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				F5406C432995097A00AD4DC9 /* AppDelegate.swift */,
 				F5406C452995097A00AD4DC9 /* SceneDelegate.swift */,
-				F5406C472995097A00AD4DC9 /* ViewController.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F5406C5A29950BAF00AD4DC9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				F5406C4C2995097B00AD4DC9 /* Assets.xcassets */,
 				F5406C4E2995097B00AD4DC9 /* LaunchScreen.storyboard */,
 				F5406C512995097B00AD4DC9 /* Info.plist */,
 			);
-			path = TestMail;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,7 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5406C482995097A00AD4DC9 /* ViewController.swift in Sources */,
+				F5406C482995097A00AD4DC9 /* VerificationViewController.swift in Sources */,
 				F5406C442995097A00AD4DC9 /* AppDelegate.swift in Sources */,
 				F5406C462995097A00AD4DC9 /* SceneDelegate.swift in Sources */,
 			);
@@ -277,7 +309,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V89L9C89Q6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TestMail/Info.plist;
+				INFOPLIST_FILE = TestMail/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -304,7 +336,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V89L9C89Q6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TestMail/Info.plist;
+				INFOPLIST_FILE = TestMail/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
